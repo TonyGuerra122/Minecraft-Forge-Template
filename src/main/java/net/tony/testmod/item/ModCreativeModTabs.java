@@ -17,12 +17,16 @@ public class ModCreativeModTabs {
     
     public static final RegistryObject<CreativeModeTab> SAPPHIRE_TAB = CREATIVE_MODE_TAB.register("sapphire_mod_tab", 
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
-        .title(Component.translatable("creativetab.sapphire_tab"))
+        .title(Component.translatable("creativetab.sapphire_mod_tab"))
         .displayItems((pParameters, pOutput) -> {
             pOutput.accept(ModItems.SAPPHIRE.get());
             pOutput.accept(ModItems.RAW_SAPPHIRE.get());
             pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
             pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+            pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
+            pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+            pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+            pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
 
             pOutput.accept(Items.DIAMOND);
