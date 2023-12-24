@@ -9,6 +9,7 @@
     "block.testmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
     "block.testmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
     "block.testmod.nether_sapphire_ore": "Nether Sapphire Ore",
-    
+    "block.testmod.sound_block": "Sound Block",
+
     "creativetab.sapphire_mod_tab": "Sapphire Test Tab"
 }
