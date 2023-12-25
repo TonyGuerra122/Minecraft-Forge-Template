@@ -1,4 +1,5 @@
 {
+    
     "item.testmod.sapphire": "Sapphire",
     "item.testmod.raw_sapphire": "Raw Sapphire",
     "item.testmod.metal_detector": "Metal Detector",
@@ -12,6 +13,8 @@
     "block.testmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
     "block.testmod.nether_sapphire_ore": "Nether Sapphire Ore",
     "block.testmod.sound_block": "Sound Block",
+
+    "tooltip.testmod.metal_detector.tooltip": "Finds valuables underground",
 
     "creativetab.sapphire_mod_tab": "Sapphire Test Tab"
 }
