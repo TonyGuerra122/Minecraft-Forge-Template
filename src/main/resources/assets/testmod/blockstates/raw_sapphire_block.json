@@ -1,7 +1,7 @@
 {
-    "variants": {
-      "": {
-        "model": "testmod:block/raw_sapphire_block"
-      }
+  "variants": {
+    "": {
+      "model": "testmod:block/raw_sapphire_block"
     }
   }
+}

@@ -1,6 +1,6 @@
 {
-    "values": [
-        "testmod:raw_sapphire_block",
-        "testmod:sapphire_block"
-    ]
+  "values": [
+    "testmod:raw_sapphire_block",
+    "#forge:ores"
+  ]
 }
