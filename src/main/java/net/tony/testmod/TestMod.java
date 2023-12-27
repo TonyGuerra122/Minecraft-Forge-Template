@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tony.testmod.block.ModBlocks;
 import net.tony.testmod.item.ModCreativeModTabs;
 import net.tony.testmod.item.ModItems;
+import net.tony.testmod.loot.ModLootModifiers;
 
 import org.slf4j.Logger;
 
@@ -35,6 +36,7 @@ public class TestMod
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
