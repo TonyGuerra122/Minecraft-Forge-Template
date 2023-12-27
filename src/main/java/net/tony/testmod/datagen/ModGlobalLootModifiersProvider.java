@@ -11,6 +11,7 @@ import net.minecraftforge.common.loot.LootTableIdCondition;
 import net.tony.testmod.TestMod;
 import net.tony.testmod.item.ModItems;
 import net.tony.testmod.loot.AddItemModifier;
+import net.tony.testmod.loot.AddSusSandItemModifier;
 
 public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
@@ -29,6 +30,10 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         }, ModItems.PINE_CONE.get()));
         add("metal_detector_from_jungle_temples", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build()
+        }, ModItems.PINE_CONE.get()));
+
+        add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build()
         }, ModItems.PINE_CONE.get()));
     }
 
