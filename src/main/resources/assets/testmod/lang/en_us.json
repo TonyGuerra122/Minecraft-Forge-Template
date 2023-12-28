@@ -18,6 +18,8 @@
     "item.testmod.sapphire_leggings": "Sapphire Leggings",
     "item.testmod.sapphire_boots": "Sapphire Boots",
 
+    "item.testmod.strawberry_seeds": "Strawberry Seeds",
+
     "block.testmod.sapphire_block": "Block of Sapphire",
     "block.testmod.raw_sapphire_block": "Block of Raw Sapphire",
     "block.testmod.sapphire_ore": "Sapphire Ore",
@@ -35,6 +37,8 @@
     "block.testmod.sapphire_wall": "Sapphire Wall",
     "block.testmod.sapphire_door": "Sapphire Door",
     "block.testmod.sapphire_trapdoor": "Sapphire Trapdoor",
+
+    "block.testmod.strawberry_crop": "Strawberry Crop",
 
     "tooltip.testmod.metal_detector.tooltip": "Finds valuables underground",
 

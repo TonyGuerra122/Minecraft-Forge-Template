@@ -27,6 +27,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tony.testmod.TestMod;
 import net.tony.testmod.block.custom.SoundBlock;
+import net.tony.testmod.block.custom.StrawberryCropBlock;
 import net.tony.testmod.item.ModItems;
 
 public class ModBlocks {
@@ -94,6 +95,9 @@ public class ModBlocks {
                         () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                                         BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST),
                                         BlockSetType.IRON));
+        public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+                        () -> new StrawberryCropBlock(
+                                        BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
                 RegistryObject<T> toReturn = BLOCKS.register(name, block);
