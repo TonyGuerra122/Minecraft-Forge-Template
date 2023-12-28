@@ -64,6 +64,8 @@ public class ModCreativeModTabs {
             pOutput.accept(ModItems.CORN_SEEDS.get());
             pOutput.accept(ModBlocks.STRAWBERRY_CROP.get());
             pOutput.accept(ModBlocks.CORN_CROP.get());
+
+            pOutput.accept(ModBlocks.CATMINT.get());
         })
         .build());
     
