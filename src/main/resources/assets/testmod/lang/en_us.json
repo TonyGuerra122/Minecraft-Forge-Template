@@ -49,5 +49,7 @@
 
     "entity.minecraft.villager.testmod.soundmaster": "Sound Master",
 
+    "sounds.testmod.metal_detector_found_ore": "Metal Detector Jingle",
+
     "creativetab.sapphire_mod_tab": "Sapphire Test Tab"
 }

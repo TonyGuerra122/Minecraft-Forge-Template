@@ -18,6 +18,7 @@ import net.tony.testmod.block.ModBlocks;
 import net.tony.testmod.item.ModCreativeModTabs;
 import net.tony.testmod.item.ModItems;
 import net.tony.testmod.loot.ModLootModifiers;
+import net.tony.testmod.sound.ModSounds;
 import net.tony.testmod.villager.ModVillagers;
 
 import org.slf4j.Logger;
@@ -41,6 +42,7 @@ public class TestMod
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
