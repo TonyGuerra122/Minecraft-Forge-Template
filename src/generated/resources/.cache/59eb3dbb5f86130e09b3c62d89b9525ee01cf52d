@@ -1,4 +1,5 @@
-// 1.20.2	2023-12-27T21:04:25.4893182	Loot Tables
+// 1.20.2	2023-12-28T14:07:06.5863762	Loot Tables
+a515d0084b45599b0709378f46d50f74319729d5 data/testmod/loot_tables/blocks/corn_crop.json
 30e721c94b74507aa37af640875dbff4d9840983 data/testmod/loot_tables/blocks/deepslate_sapphire_ore.json
 9d222dfb2ef2ac9c273ba1db2abb6eb9e886c8ae data/testmod/loot_tables/blocks/end_stone_sapphire_ore.json
 f5f48ea8d42a9cd0a1ce51912e0c564e191bda88 data/testmod/loot_tables/blocks/nether_sapphire_ore.json
@@ -15,4 +16,4 @@ fb1768bbac0797b518171b6d5a52d7d209e68113 data/testmod/loot_tables/blocks/sapphir
 8e782becc9a5b6f0d5eba118b76d44284da777c7 data/testmod/loot_tables/blocks/sapphire_trapdoor.json
 6957b14d6ff9890650d299a4fdd1cddeefefc54b data/testmod/loot_tables/blocks/sapphire_wall.json
 26c8e5f0e5177a0abdcb57c0889b568c1c6fb50f data/testmod/loot_tables/blocks/sound_block.json
-d1391f116c44991cfab769976b77143e1be33d0d data/testmod/loot_tables/blocks/strawberry_crop.json
+a7727fa46eba98f8900b925fc3dde2251188c245 data/testmod/loot_tables/blocks/strawberry_crop.json

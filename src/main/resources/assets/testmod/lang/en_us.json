@@ -4,6 +4,7 @@
     "item.testmod.raw_sapphire": "Raw Sapphire",
     "item.testmod.metal_detector": "Metal Detector",
     "item.testmod.strawberry": "Strawberry",
+    "item.testmod.corn": "Corn",
     "item.testmod.pine_cone": "Pine Cone",
 
     "item.testmod.sapphire_staff": "Sapphire Staff",
@@ -19,6 +20,7 @@
     "item.testmod.sapphire_boots": "Sapphire Boots",
 
     "item.testmod.strawberry_seeds": "Strawberry Seeds",
+    "item.testmod.corn_seeds": "Corn Seeds",
 
     "block.testmod.sapphire_block": "Block of Sapphire",
     "block.testmod.raw_sapphire_block": "Block of Raw Sapphire",
@@ -39,6 +41,7 @@
     "block.testmod.sapphire_trapdoor": "Sapphire Trapdoor",
 
     "block.testmod.strawberry_crop": "Strawberry Crop",
+    "block.testmod.corn_crop": "Corn Crop",
 
     "tooltip.testmod.metal_detector.tooltip": "Finds valuables underground",
 

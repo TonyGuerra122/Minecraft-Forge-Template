@@ -17,6 +17,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.block.custom.CornCropBlock;
 import net.tony.testmod.block.custom.StrawberryCropBlock;
 import net.tony.testmod.item.ModItems;
 
@@ -64,6 +65,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.add(ModBlocks.STRAWBERRY_CROP.get(),
                                 createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                                                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcon$builder));
+                LootItemCondition.Builder lootitemcon$builder2 = LootItemBlockStatePropertyCondition
+                                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(CornCropBlock.AGE, 7))
+                                                .or(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8)));
+                this.add(ModBlocks.STRAWBERRY_CROP.get(),
+                                createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
+                                                ModItems.CORN_SEEDS.get(), lootitemcon$builder));
+                this.add(ModBlocks.CORN_CROP.get(),
+                                createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
+                                                ModItems.CORN_SEEDS.get(), lootitemcon$builder2));
+
+                                                
         }
 
         protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

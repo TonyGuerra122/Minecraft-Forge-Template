@@ -27,7 +27,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "testmod:strawberry_seeds"
+              "name": "testmod:corn_seeds"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "testmod:strawberry_seeds"
+          "name": "testmod:corn_seeds"
         }
       ],
       "rolls": 1.0

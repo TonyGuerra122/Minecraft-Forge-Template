@@ -22,6 +22,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.tony.testmod.TestMod;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.block.custom.CornCropBlock;
 import net.tony.testmod.block.custom.StrawberryCropBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -58,11 +59,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/sapphire_trapdoor"), true, "cutout");
 
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(), "strawberry_stage", "strawberry_stage");
+        makeCornCrop((CropBlock) ModBlocks.CORN_CROP.get(), "corn_stage_", "corn_stage_");
 
     }
 
     public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> strawberryStates(state, block, modelName,
+                textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    public void makeCornCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> cornStates(state, block, modelName,
                 textureName);
 
         getVariantBuilder(block).forAllStates(function);
@@ -76,6 +84,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         new ResourceLocation(TestMod.MOD_ID,
                                 "block/" + textureName
                                         + state.getValue(((StrawberryCropBlock) block).getAgeProperty())))
+                .renderType("cutout"));
+
+        return models;
+    }
+    private ConfiguredModel[] cornStates(BlockState state, CropBlock block, String modelName,
+            String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models()
+                .crop(modelName + state.getValue(((CornCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TestMod.MOD_ID,
+                                "block/" + textureName
+                                        + state.getValue(((CornCropBlock) block).getAgeProperty())))
                 .renderType("cutout"));
 
         return models;
