@@ -2,6 +2,7 @@ package net.tony.testmod.item;
 
 import net.tony.testmod.TestMod;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.item.custom.DaggerItem;
 import net.tony.testmod.item.custom.FuelItem;
 import net.tony.testmod.item.custom.MetalDetectorItem;
 import net.tony.testmod.item.custom.ModArmorItem;
@@ -44,6 +45,9 @@ public class ModItems {
                         () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
         public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
                         () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+        public static final RegistryObject<Item> DIAMOND_DAGGER = ITEMS.register("diamond_dagger", 
+                        () -> new DaggerItem(Tiers.DIAMOND, 3, 2, 1.5f, new Item.Properties()));
 
         public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
                         () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET,
