@@ -1,7 +1,6 @@
 package net.tony.testmod;
 
-import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,13 +14,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.entity.ModEntities;
+import net.tony.testmod.entity.client.RhinoRenderer;
 import net.tony.testmod.item.ModCreativeModTabs;
 import net.tony.testmod.item.ModItems;
 import net.tony.testmod.loot.ModLootModifiers;
 import net.tony.testmod.sound.ModSounds;
 import net.tony.testmod.villager.ModVillagers;
-
-import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TestMod.MOD_ID)
@@ -29,9 +28,7 @@ public class TestMod
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "testmod";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
-    
+        
 
     public TestMod()
     {
@@ -43,6 +40,7 @@ public class TestMod
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -80,9 +78,7 @@ public class TestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
         }
     }
 }

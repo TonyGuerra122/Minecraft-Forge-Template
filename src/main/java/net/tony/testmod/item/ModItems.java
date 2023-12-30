@@ -2,12 +2,14 @@ package net.tony.testmod.item;
 
 import net.tony.testmod.TestMod;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.entity.ModEntities;
 import net.tony.testmod.item.custom.DaggerItem;
 import net.tony.testmod.item.custom.FuelItem;
 import net.tony.testmod.item.custom.MetalDetectorItem;
 import net.tony.testmod.item.custom.ModArmorItem;
 import net.tony.testmod.sound.ModSounds;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -69,6 +71,9 @@ public class ModItems {
 
         public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
                         () -> new RecordItem(6, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2440));
+
+        public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg", 
+                () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5, new Item.Properties()));
 
         public static void register(IEventBus eventBus) {
                 ITEMS.register(eventBus);
