@@ -23,6 +23,10 @@
     "item.testmod.strawberry_seeds": "Strawberry Seeds",
     "item.testmod.corn_seeds": "Corn Seeds",
 
+    "item.testmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+
+    "item.testmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
     "block.testmod.sapphire_block": "Block of Sapphire",
     "block.testmod.raw_sapphire_block": "Block of Raw Sapphire",
     "block.testmod.sapphire_ore": "Sapphire Ore",

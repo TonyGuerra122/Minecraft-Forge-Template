@@ -68,6 +68,8 @@ public class ModCreativeModTabs {
             pOutput.accept(ModBlocks.CORN_CROP.get());
 
             pOutput.accept(ModBlocks.CATMINT.get());
+
+            pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
         })
         .build());
     
